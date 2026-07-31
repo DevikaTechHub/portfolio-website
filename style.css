@@ -169,11 +169,18 @@ h3 {
 
 .skills-grid div,
 .project-card,
-.timeline-item {
+.timeline-item,
+.cert-box,
+.contact-box {
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
 }
 
 .tech {
@@ -183,9 +190,31 @@ h3 {
     margin-bottom: 10px;
 }
 
+.project-link {
+    align-self: flex-start;
+    background: #0f766e;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.project-card p:not(.tech) {
+    margin-bottom: 18px;
+}
+
+.cert-box ul {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+
 .timeline {
     display: grid;
     gap: 16px;
+}
+
+.contact-box {
+    display: grid;
+    gap: 12px;
 }
 
 .contact a {
